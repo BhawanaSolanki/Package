@@ -1,0 +1,24 @@
+{
+  "name": "bhawana/schoolpay",
+  "description": "Laravel package for managing school fees via Razorpay and Stripe",
+  "type": "library",
+  "autoload": {
+    "psr-4": {
+      "Bhawana\\SchoolPay\\": "src/"
+    }
+  },
+  "require": {
+    "php": "^8.0",
+    "razorpay/razorpay": "^2.8",
+    "stripe/stripe-php": "^12.0"
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "Bhawana\\SchoolPay\\SchoolPayServiceProvider"
+      ]
+    }
+  },
+  "minimum-stability": "dev",
+  "prefer-stable": true
+}
